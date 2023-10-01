@@ -18,7 +18,6 @@ const LoginPage: React.FC = () => {
   const validationSchema = Yup.object({
     email: Yup.string()
       .matches(
-        // Regular expression for a basic email validation
         /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
         "Invalid email address"
       )
@@ -72,7 +71,7 @@ const LoginPage: React.FC = () => {
                       id="email"
                       name="email"
                       placeholder="name@company.com"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     />
                     <FormError name="email" />
                   </div>
@@ -84,7 +83,7 @@ const LoginPage: React.FC = () => {
                       Password
                     </label>
                     <Field
-                      className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       type="password"
                       id="password"
                       name="password"
@@ -104,7 +103,7 @@ const LoginPage: React.FC = () => {
                   )}
                   <button
                     type="submit"
-                    className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                    className="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     Sign in
                   </button>
@@ -112,7 +111,7 @@ const LoginPage: React.FC = () => {
                     Don’t have an account yet?{" "}
                     <Link
                       to="/signup"
-                      className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                     >
                       Sign up
                     </Link>
@@ -123,7 +122,6 @@ const LoginPage: React.FC = () => {
           </section>
         </Form>
       </Formik>
-      <div></div>
     </>
   );
 };
